@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Project built with Bootstrap for Holberton School">
+    <title>Smile School - Homepage</title>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="images/favicon.png" rel="icon" type="image/png" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="font-style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="homepage">
+    <header class="homepage__header">
+      <div class="container">
+        <!-- Header-->
+        <div class="d-flex justify-content-between pt-4 flex-sm-row flex-column">
+          <!-- Logo -->
+          <div class="logo d-flex align-items-center justify-content-sm-start flex-sm-row flex-column">
+            <a href="#" class="logo__smile mr-sm-3">Smile</a>
+            <a href="#" class="logo__text mt-sm-0 mt-3">SmileSchool</a>
+          </div>
+          <span href="#navigationbar" class="holberton_school-icon-menu float-left position-absolute d-sm-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navigationbar"></span>
+          <!-- Navigation -->
+          <nav class="nav text-white col-xl-3 col-sm-6 col-12 col-md-5 d-sm-flex collapse px-0" id="navigationbar">
+            <ul class="d-flex justify-content-sm-between align-items-center p-0 m-0 w-100 flex-column flex-sm-row font-weight-bold">
+              <li class="nav-link"><a href="courses.html">COURSES</a></li>
+              <li class="nav-link"><a href="pricing.html">PRICING</a></li>
+              <li class="nav-link"><a href="#">LOGIN</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <!-- Hero Section -->
+        <div class="text-center">
+          <h1 class="text-white font-weight-bold mb-0">Get schooled</h1>
+          <div class="d-flex justify-content-center text-white font-weight-bold">
+            <span class="mr-5">SMILES</span>
+            <span class="mx-2">GRIN</span>
+            <span class="ml-5">LAUGH</span>
+          </div>
+          <button class="btn btn-primary px-4 py-2 my-4">REGISTER FOR
+            FREE</button>
+        </div>
+  
+        <!-- Pros Info -->
+        <section class="pros_section text-white text-center pt-5 mt-3">
+          <h2 class="font-weight-light py-5 mt-5"><span class="txt__purple font-weight-bold">Learn</span> from the pros</h2>
+          <div class="d-flex row mt-5">
+            <article class="col-6 col-md-3">
+              <img src="images/profile_1.jpg" class="pros__photo rounded-circle mb-3" alt="Phillip Massey photo"></img>
+              <h3 class="pros__name font-weight-bold">Phillip Massey</h3>
+              <p class="font-italic font-weight-normal">« Smile of the year »<br>2018 - 2019</p>
+            </article>
+            <article class="col-6 col-md-3">
+              <img src="images/profile_2.jpg" class="pros__photo rounded-circle mb-3" alt="Nannie Lawrence photo"></img>
+              <h3 class="pros__name font-weight-bold">Nannie Lawrence</h3>
+              <p class="font-italic font-weight-normal">Best « little smile »<br>2017</p>
+            </article>
+            <article class="col-6 col-md-3">
+              <img src="images/profile_3.jpg" class="pros__photo rounded-circle mb-3" alt="Bruce Walters photo"></img>
+              <h3 class="pros__name font-weight-bold">Bruce Walters</h3>
+              <p class="font-italic font-weight-normal">Best « Friend Smile »<br>live performance 2019</p>
+            </article>
+            <article class="col-6 col-md-3">
+              <img src="images/profile_4.jpg" class="pros__photo rounded-circle mb-3" alt="Henry Hughes photo"></img>
+              <h3 class="pros__name font-weight-bold">Henry Hughes</h3>
+              <p class="font-italic font-weight-normal">« 24h smiles »<br>winner 2016 - 2019</p>
+            </article>
+          </div>
+        </section>
+    </header>
+    
+    <main>
+      <!-- Quotes Carousel -->
+      <section class="bg__purple text-white py-5">
+        <div id="quotes-carousel" class="carousel slide my-5" data-ride="carousel">
+          <div class="carousel-inner container px-2" id="quotes">
+            <!-- Quotes Items -->
+          </div>
+          <!-- Arrow prev -->
+          <a class="carousel-control-prev d-flex align-items-start align-items-sm-center pt-5 pt-sm-0" href="#quotes-carousel" role="button" data-slide="prev">
+            <img class="carousel-arrow" src="./images/arrow_white_left.png" aria-hidden="true">
+            <span class="sr-only">Previous</span>
+          </a>
+          <!-- Arrow next -->
+          <a class="carousel-control-next d-flex align-items-start align-items-sm-center pt-5 pt-sm-0" href="#quotes-carousel" role="button" data-slide="next">
+            <img class="carousel-arrow" src="./images/arrow_white_right.png" aria-hidden="true">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      
+      <!--  - Most popular tutorials - Section -->
+      <section class="py-5">
+        <div>
+          <header class="my-5 pb-3">
+            <h2 class="font-weight-light text-center">Most <span class="font-weight-bold txt__purple">popular</span> tutorials</h2>
+          </header>
+          <!--  CAROUSEL  -->
+            <div id="tutorials" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner container" id="popular-tutorials">
+                <!--  Carousel Cards  -->
+              </div>
+              <!-- Arrow Prev -->
+              <a class="col carousel-control-prev mt-n5" href="#tutorials"
+              role="button" data-slide="prev">
+                <img src="./images/arrow_black_left.png" aria-hidden="true">
+                <span class="sr-only">Previous</span>
+              </a>
+              <!-- Arrow Next -->
+              <a class="col carousel-control-next mt-n5" href="#tutorials"
+                role="button" data-slide="next">
+                <img src="./images/arrow_black_right.png" aria-hidden="true">
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+        </div>
+      </section>
+
+      <!--  - Free membership - Section -->
+      <section class="bg__dark-blue py-5">
+        <div class="container text-white text-center">
+          <header class="my-5">
+            <h2 class="font-weight-light"><span class="font-weight-bold txt__purple">Free</span> membership</h2>
+          </header>
+          <div class="row pb-5 px-5">
+            <div class="smiley__card col-12 col-sm-6 col-lg-3">
+              <img src="images/smile_on.png" class="pb-4" width="45px" alt="Smile Icon">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="smiley__card col-12 col-sm-6 col-lg-3">
+              <img src="images/smile_on.png" class="pb-4" width="45px" alt="Smile Icon">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="smiley__card col-12 col-sm-6 col-lg-3">
+              <img src="images/smile_on.png" class="pb-4" width="45px" alt="Smile Icon">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="smiley__card col-12 col-sm-6 col-lg-3">
+              <img src="images/smile_on.png" class="pb-4" width="45px" alt="Smile Icon">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-primary px-4 py-2 my-2">REGISTER FOR FREE</button>
+          </div>
+        </div>
+      </section>
+
+      <!--  - Latest videos - Section -->
+      <section class="py-5">
+        <div>
+          <header class="my-5 pb-3">
+            <h2 class="font-weight-light text-center"><span class="font-weight-bold txt__purple">Latest</span> videos</h2>
+          </header>
+
+          <!--  CAROUSEL  -->
+          <div id="latest__videos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner container" id="latest-videos">
+              <!--  Carousel Cards  -->
+            </div>
+            <!-- Arrow Prev -->
+            <a class="col carousel-control-prev mt-n5" href="#latest__videos"
+            role="button" data-slide="prev">
+              <img src="./images/arrow_black_left.png" aria-hidden="true">
+              <span class="sr-only">Previous</span>
+            </a>
+          <!-- Arrow Next -->
+            <a class="col carousel-control-next mt-n5" href="#latest__videos"
+              role="button" data-slide="next">
+              <img src="./images/arrow_black_right.png" aria-hidden="true">
+              <span class="sr-only">Next</span>
+            </a>
+
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg__dark-blue d-flex align-items-center justify-content-center pt-5">
+      <div class="container">
+        <div class="row d-flex align-items-center flex-column flex-sm-row pt-md-4">
+          <!-- Logo -->
+          <div class="col d-flex justify-content-sm-start justify-content-center">
+            <div class="d-flex align-items-center">
+              <a href="#" class="logo__smile mr-3">Smile</a>
+              <a href="#" class="logo__text">SmileSchool</a>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-center align-items-sm-end justify-content-center justify-content-sm-end">
+            <ul class="social-media nav">
+              <li class="social-media__item mr-3">
+                <a href="#" aria-label="Facebook"><span class="holberton_school-icon-ic_facebook"></span></a>
+              </li>
+              <li class="social-media__item mr-3">
+                <a href="#" aria-label="Twitter"><span class="holberton_school-icon-ic_twitter"></span></a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" aria-label="Instagram"><span class="holberton_school-icon-ic_instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="row copy justify-content-center pt-5">&copySmileSchool 2021</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <!-- JS Scripts -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

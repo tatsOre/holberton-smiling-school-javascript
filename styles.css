@@ -1,0 +1,727 @@
+/* SUMMARY
+1. GLOBAL
+2. HOMEPAGE
+3. PRICING
+4. COURSES
+5. FOOTER
+
+*/
+/* Underscored name properties are custom */
+
+/*** 1. GLOBAL ***/
+/* Color variables
+  ============================= */
+
+:root {
+  --color-purple: #c271ff;
+  --color-dark-blue: #071629;
+}
+
+/* Base
+============================ */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bg__purple {
+  background-color: var(--color-purple);
+}
+
+.txt__purple {
+  color: var(--color-purple);
+}
+
+.bg__dark-blue {
+  background-color: var(--color-dark-blue);
+}
+
+.txt__dark-blue {
+  color: var(--color-dark-blue);
+}
+
+.btn-primary {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px !important;
+  border: 0;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary,
+.btn-primary:active {
+  background-color: var(--color-purple) !important;
+} 
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--color-purple);
+}
+
+a.current__link {
+  color: var(--color-purple);
+  cursor: default;
+  position: relative;
+}
+
+a.current__link::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 5;
+}
+
+/* Spinner
+============================ */
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Icons
+============================ */
+/* Hidden Menu
+  ============================== */
+.holberton_school-icon-menu {
+  margin-left: .5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Social Media Icons
+  ============================== */
+.holberton_school-icon-ic_facebook:before {
+  content: "\e908";
+}
+
+.holberton_school-icon-ic_twitter:before {
+  content: "\e90f";
+}
+
+.holberton_school-icon-ic_instagram:before {
+  content: "\e90a";
+}
+
+/* Pricing Table
+  ============================== */
+.holberton_school-icon-check:before {
+  content: "\e905";
+}
+
+/* Search input - Courses Page
+  ============================== */
+.holberton_school-icon-search:before {
+  content: '\e912';
+}
+
+/*** 1. HOMEPAGE ***/
+/* Header - Logo
+============================ */
+
+.logo__smile {
+  text-indent: -99999px;
+  width: 37px;
+  height: 30px;
+  background: url(images/smile_off.svg) 0 0 no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.logo__text {
+  text-indent: -99999px;
+  width: 112px;
+  height: 13px;
+  background: url(images/logo.svg) 0 0 no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+/* Navigation Bar
+  ============================== */
+
+.nav-link {
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+}
+
+@media screen and (max-width: 575px) {
+  nav.nav {
+    padding-top: 1rem;
+  }
+  .logo {
+    padding-top: 0.5rem;
+  }
+}
+
+/* Hero
+  ============================== */
+
+.homepage__header {
+  background: url('images/pic_1.jpg') var(--color-dark-blue) center center no-repeat;
+  background-size: cover;
+  min-height: 1093px;
+  width: 100%;
+  padding-bottom: 2.5rem;
+}
+
+.homepage h1 {
+  font-size: 7.5rem;
+  margin-top: 10rem;
+}
+
+/* Pros Section
+  ============================== */
+
+.pros_section h2 {
+  font-size: 32px;
+}
+
+.pros__photo {
+  width: 150px;
+  height: 150px;
+}
+
+.pros__name {
+  font-size: 18px;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+  .homepage__header {
+    background-size: 1050px;
+    background-position: top;
+  }
+  .homepage h1 {
+    font-size: 3.5rem;
+    margin-top: 10.5rem;
+    line-height: 1.75;
+  }
+  .homepage__header .btn-primary {
+    margin-top: 3rem !important;
+  }
+  .pros_section h2 {
+    margin-top: 1rem !important;
+  }
+  .pros_section div article {
+    margin-bottom: 2.25rem;
+  }
+} 
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .homepage h1 {
+    line-height: 1;
+  }
+  .pros_section h2 {
+    padding: 0 !important;
+  }
+}
+
+/* Testimonials Carousel Section
+  ============================== */
+
+.carousel__img {
+  width: 160px;
+  height: 160px;
+}
+
+.carousel-control-prev img,
+.carousel-control-next img {
+  width: 29.04px;
+  height: 62.67px;
+}
+
+.carousel-item__text p {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 575px) {
+  .carousel__img {
+    width: 148px;
+    height: 148px;
+  }
+
+  .carousel-item__text {
+    margin-right: 0;
+  }
+}
+
+/* Tutorials Carousel Section
+  ============================== */
+ .card  {
+  padding-left: 0;
+  padding-right: 0;
+  width: 16rem;
+  border: none;
+}
+
+.play__icon {
+  width: 64px;
+}
+
+h4.card-title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.duration__video,
+.user__name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 27px;
+  color: var(--color-purple);
+}
+
+.rating__stars img {
+  width: 15px;
+  margin-left: 4px;
+}
+/* Media Queries for Carousel: Popular Tutorials and Latest Videos Static Version */
+@media screen and (max-width: 576px) {
+  #popular_tutorials-sm,
+  #latest-videos-sm {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1109px) {
+  #popular_tutorials-md,
+  #latest-videos-md {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  #popular_tutorials-lg,
+  #latest-videos-lg {
+    display: block !important;
+  }
+}
+
+/* Media Queries for Carousel: Popular Tutorials and Latest Videos
+  ============================== */
+  /* Extra small devices (less than 576px) */
+  @media (max-width: 575px) {
+  #tutorials .carousel-inner .carousel-item-right.active,
+  #tutorials .carousel-inner .carousel-item-next,
+  #latest__videos .carousel-inner .carousel-item-right.active,
+  #latest__videos .carousel-inner .carousel-item-next {
+    transform: translateX(100%);
+  }
+
+  #tutorials .carousel-inner .carousel-item-left.active,
+  #tutorials .carousel-inner .carousel-item-prev,
+  #latest__videos .carousel-inner .carousel-item-left.active,
+  #latest__videos .carousel-inner .carousel-item-prev {
+    transform: translateX(-100%);
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 991px) {
+  #tutorials .carousel-inner .carousel-item-right.active,
+  #tutorials .carousel-inner .carousel-item-next,
+  #latest__videos .carousel-inner .carousel-item-right.active,
+  #latest__videos .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+
+  #tutorials .carousel-inner .carousel-item-left.active,
+  #tutorials .carousel-inner .carousel-item-prev,
+  #latest__videos .carousel-inner .carousel-item-left.active,
+  #latest__videos .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #tutorials .carousel-inner .carousel-item-right.active,
+  #tutorials .carousel-inner .carousel-item-next,
+  #latest__videos .carousel-inner .carousel-item-right.active,
+  #latest__videos .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  #tutorials .carousel-inner .carousel-item-left.active,
+  #tutorials .carousel-inner .carousel-item-prev,
+  #latest__videos .carousel-inner .carousel-item-left.active,
+  #latest__videos .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+#tutorials .carousel-inner .carousel-item.active,
+#tutorials .carousel-inner .carousel-item-next,
+#tutorials .carousel-inner .carousel-item-prev,
+#latest__videos .carousel-inner .carousel-item.active,
+#latest__videos .carousel-inner .carousel-item-next,
+#latest__videos .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+#tutorials .carousel-inner .carousel-item-right,
+#tutorials .carousel-inner .carousel-item-left,
+#latest__videos .carousel-inner .carousel-item-right,
+#latest__videos .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+  #tutorials .container, 
+  #latest__videos .container {
+    max-width: 85%;
+  }
+}
+@media (min-width: 1600px) {
+  #quotes-carousel, #tutorials, #latest__videos {
+    max-width: 1600px;
+    margin: auto;
+  }
+}
+
+/* Free Membership Section
+  ============================== */
+
+.smiley__card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.smiley__card p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .smiley__card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 575px) {
+  .smiley__card {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .smiley__card {
+    padding-bottom: 2.25rem;
+  }
+}
+
+/*** 3. PRICING PAGE ***/
+/* Hero
+  ============================== */
+
+.pricing__header {
+  background: url('images/pic_2.jpg') var(--color-dark-blue) top center no-repeat;
+  background-size: cover;
+  min-height: 1170px;
+}
+
+.pricing h1 {
+  font-size: 32px;
+  margin-top: 13.5rem;
+  margin-bottom: 5rem;
+}
+
+.pricing h1 span {
+  font-family: 'Coiny', cursive;
+}
+
+.smile__icon {
+  max-width: 37px;
+  margin-top: -5px;
+}
+
+.pricing__grid h2 {
+  font-size: 60px;
+  line-height: 75px;
+}
+
+.prices__banner h3 {
+  font-size: 44px;
+  margin-bottom: 0;
+}
+
+.prices__banner p {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.prices__banner button {
+  width: 162px;
+  height: 44px;
+}
+
+/* Prices Grid/Table
+  ============================== */
+
+.prices__table {
+  table-layout: fixed;
+}
+
+.prices__table td {
+  padding: 1.25rem 0;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.prices__table tbody tr > td {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.col__2 span, .col__3 span {
+  vertical-align: middle;
+}
+
+.holberton_school-icon-check {
+  font-size: 30px;
+  color: #82D24F;
+}
+
+@media screen and (max-width: 768px) {
+  .prices__table tbody tr:nth-child(-n+3) td {
+    padding: 1rem 0;
+  }
+  .pricing__header {
+    background-size: 1400px;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pricing__header {
+    background-position: -550px top;
+  }
+  .pricing__grid h1 {
+    font-size: 24px;
+    margin-top: 11.5rem;
+    margin-bottom: 3rem;
+  }
+  .smile__icon {
+    max-width: 30px;
+  }
+  .pricing__grid h2 {
+    margin-bottom: 2.25rem;
+  }
+  .prices__table {
+    table-layout: initial;
+  }
+  .prices__table th {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .prices__table tbody tr > td:first-child {
+    width: 50%;
+  }
+  .col__2 {
+    width: 27%;
+  }
+  .col__3 {
+    width: 20%;
+  }
+  .col__3 span {
+    padding-left: 10px;
+  }
+  .table thead th.col__2,
+  .pricing__grid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* F.A.Q Section
+  ============================== */
+
+.faq h2 {
+  font-size: 60px;
+  line-height: 75px;
+}
+
+.faq__item h3 {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 25px;
+}
+
+.faq__item p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 1185px) {
+  .faq__item {
+    max-width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .faq__item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/*** 4. COURSES PAGE ***/
+/* Hero
+  ============================== */
+
+.courses__header {
+  background: url('images/pic_3.jpg') bottom center no-repeat;
+  background-size: cover;
+}
+
+.courses_page h1 {
+  font-family: 'Coiny', cursive;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+/* Courses Search
+  ============================== */
+
+.courses__search .form-group label {
+  font-size: 12px;
+  line-height: 15px;
+  padding-bottom: 0.25rem;
+}
+
+.input__container {
+  background-color: #d194ff;
+}
+
+.holberton_school-icon-search:before {
+  padding-right: 15px;
+  font-size: 1.5rem;
+}
+
+.input__container input::placeholder {
+  opacity: 0.5;
+}
+
+.dropdown .btn {
+  width: 100%;
+  background-color: #d194ff;
+  text-align: left;
+}
+
+.input__container input::placeholder,
+.dropdown .btn {
+  font-size: 23px;
+  line-height: 29px;
+  color: white;
+}
+
+.input__container, 
+.dropdown-toggle {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px 4px 0 0;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  right: 20px;
+  top: 45%;
+}
+
+input#dropdown-topic_btn,
+input#dropdown-sort_btn,
+a.dropdown-item {
+  text-transform: capitalize;
+}
+
+
+a.dropdown-item:hover {
+  color: var(--color-purple);
+  background-color: white;
+}
+
+/* Courses Results
+  ============================== */
+
+.courses__results .card {
+  border: none;
+  margin-bottom: .5rem;
+}
+
+.courses__results {
+  padding-bottom: 2rem;
+}
+
+p.results-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .courses__header {
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .courses__header {
+    background-position: center center;
+    padding-bottom: 2rem;
+  }
+}
+
+/*** 5. FOOTER ***/
+
+footer {
+  height: 250px;
+}
+
+.social-media__item a {
+  font-size: 32px;
+}
+
+footer p {
+  color: white;
+  opacity: 0.35;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .social-media {
+    padding-top: 0.75rem;
+  }
+  footer p.copy {
+    padding-top: 1.5rem !important;
+  }
+}
